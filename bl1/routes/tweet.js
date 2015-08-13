@@ -5,10 +5,10 @@ var urlInfo;
 var Twitter = require('twitter');
 var fs=require('fs');
 var client = new Twitter({
-  consumer_key: 'BXjEtP1sgoX3MByjlH9kY4Dfu',
-  consumer_secret: 'TbpBYMJh768hetbFletjhzAIxLA7zrPHy6sOHF613LP9xcAgRq',
-  access_token_key: '590035327-e4MXg31ECi2aeYaDEdnTOwwXWtiYCABrfUF0ufQK',
-  access_token_secret: 'NomRQQ7FIWhVfJqfQkIiIeLBimaNj2CsKSxuiRq9S6y3m'
+  consumer_key: '',
+  consumer_secret: '',
+  access_token_key: '',
+  access_token_secret: ''
 });
 
 router.get('/tweet', function(req, res, next) {
