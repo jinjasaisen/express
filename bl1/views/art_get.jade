@@ -1,0 +1,16 @@
+extends layout
+
+block content
+ h1.label.label-info article page
+ br
+ br
+ br
+ div.panel.panel-default
+  =title
+ ul
+  each item in content
+   div.panel.panel-default
+    a(href=item.title)
+    =item.title 
+    div.panel.panel-body    
+     =item.body

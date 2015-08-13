@@ -1,0 +1,12 @@
+extends layout
+
+block content
+ h1.head1 content page
+ ul
+  each item in content
+   div.box3 
+    =item.title 
+    |  | 
+    =item.term
+   div.box2
+    =item.body

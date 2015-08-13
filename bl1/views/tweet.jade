@@ -1,0 +1,43 @@
+extends layout
+
+block content
+ h1.label.label-info tweet
+ br
+ br
+ br
+ div.panel.panel-default
+  div.panel.panel-heading
+   =tw0.text
+   br
+   div.label.label-info
+    a(href="http://twitter.com/"+tw0.user.screen_name,target="_blank")
+    =tw0.user.screen_name
+   br
+   !=tw1.text
+   div.label.label-info
+    a(href="http://twitter.com/"+tw1.user.screen_name,target="_blank")   
+    =tw1.user.screen_name
+   br
+   =tw2.text
+   div.label.label-info
+    a(href="http://twitter.com/"+tw2.user.screen_name,target="_blank")   
+    =tw2.user.screen_name
+   br
+   =tw3.text
+   div.label.label-info
+    a(href="http://twitter.com/"+tw3.user.screen_name,target="_blank")   
+    =tw3.user.screen_name
+   br
+   =tw4.text
+   div.label.label-info   
+    a(href="http://twitter.com/"+tw4.user.screen_name,target="_blank")   
+    =tw4.user.screen_name
+   br
+   =tw5.text
+   div.label.label-info   
+    a(href="http://twitter.com/"+tw5.user.screen_name,target="_blank")      
+    =tw5.user.screen_name      
+ //-  div.panel.panel-body
+ //-   !=message.text.replace(/,/g, ",<br /><br>").replace(/\./g, ".<br /><br>")
+ //- br 
+ br

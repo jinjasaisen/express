@@ -1,0 +1,14 @@
+extends layout
+
+block content
+ h1= title
+  form#formAddContent(name="addpost",method="post",action="/add_post")
+  input#input_title(type="text", placeholder="title", name="title")
+  br
+  input#input_voc(type="text", placeholder="voc", name="voc")
+  br
+  input#input_term(type="text", placeholder="term", name="term")
+  br
+  textarea#input_body(cols="50", rows="15", placeholder="body", name="body")
+  br
+  button#btnSubmit(type="submit") submit

@@ -1,0 +1,17 @@
+extends layout
+
+block content
+ h1.label.label-lg 
+  =pagename
+ br
+ br
+ ul
+  each item in list
+   div.panel.panel-primary
+    div.panel.panel-heading
+      =item.title 
+      |  |  
+      =item.term
+    div.panel.panel-body
+     !=item.body.replace(/\n/g, "<br />")
+ 

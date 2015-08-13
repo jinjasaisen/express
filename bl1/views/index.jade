@@ -1,0 +1,14 @@
+extends layout
+
+block content
+ h1.label.label-info= title
+ br
+ br
+ p.box2 Welcome to #{title}
+ br
+ div(ng-app="")
+  input(type="text", name="input", ng-model="name")
+  br
+  br
+  p.label.label-info
+   {{name}} 

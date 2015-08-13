@@ -1,0 +1,30 @@
+extends layout
+
+block content
+ h1.label.label-lg 
+  =pagename
+ br
+ br
+ ul
+  each item in list
+   div.panel.panel-primary
+    div.panel.panel-heading
+      =item.title 
+      |  |  
+      =item.term
+    div.panel.panel-body
+     !=item.body.replace(/\n/g, "<br />")
+ 
+ //- div.panel.panel-primary
+ //-  - each i in list
+ //-   div.panel.panel-title
+ //-    =i.title
+ //-    br
+ //-    =i.term   
+ //-    div.panel.panel-body
+ //-     br
+ //-     !=i.body.replace(/\n/g, "<br>")    
+   
+ //- form(name="article",method="post",action="/art_get")
+ //-  input(type="text", placeholder="title", name="title")
+ //-  button(type="submit") submit

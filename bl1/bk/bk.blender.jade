@@ -1,0 +1,15 @@
+extends layout
+
+block content
+ h1.label.label-info blender page
+ br
+ br
+ br
+ ul
+  each item in blender_content
+   div.panel.panel-default
+    div.panel.panel-body   
+     =item.title
+     | 
+     span.label.label-primary=a(href=item.term)
+ 

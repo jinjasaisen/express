@@ -1,0 +1,16 @@
+extends layout
+
+block content
+ h1.label.label-info particle page
+ br
+ br
+ br
+ div.label.label-primary
+ br
+ ul
+  each item in part_content
+   div.panel.panel-primary
+    div.panel.panel-heading
+      =item.title
+    div.panel.panel-body
+     !=item.body.replace(/\n/g, "<br />")

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+ h1.label.label-info
+  =pagename
+ br
+ br
+ br
+ div.panel.panel-primary
+  div.panel.panel-body
+
+   ul
+    - each i in list
+     br
+     form(name="article",method="post",action="/art_post")
+      input(type="hidden", placeholder="title", name="title",value=i.title)
+      button(type="submit") 
+       =i.title
+      div.label.label-lg
+       a(href=i.term)
+        =i.term

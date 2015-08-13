@@ -1,0 +1,7 @@
+extends layout
+
+block content
+ h1= title
+ form(name="delpost",method="post",action="/del_post")
+  input(type="text", placeholder="title", name="title")
+  button(type="submit") submit

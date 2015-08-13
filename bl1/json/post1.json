@@ -1,0 +1,2 @@
+{ "title" : "add particle", "voc":"blender","term" : "particle","body":
+"bpy.ops.object.particle_system_add()" }

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+ h1.label.label-info blender page
+ br
+ br
+ br
+ ul
+  each item in blender_content
+   span.label.label-default
+    =item.title 
+    |  |    
+    a(href=item.term, target="_blank") 
+     =item.term
+    br

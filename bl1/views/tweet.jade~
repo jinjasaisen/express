@@ -1,0 +1,21 @@
+extends layout
+
+block content
+ h1.label.label-info tweet
+ br
+ br
+ br
+p.label.label-info
+  =usra
+ //- br
+ //- br
+ //- p.label.label-default
+ //-   !=mesa.replace(/,/g, ",<br /><br>").replace(/\./g, ".<br /><br>")
+ //- br 
+ //- br
+ //- p.label.label-info
+ //-  =usrb
+ //- br
+ //- br
+ //- p.label.label-default
+ //-   !=mesb.replace(/,/g, ",<br /><br>").replace(/\./g, ".<br /><br>")

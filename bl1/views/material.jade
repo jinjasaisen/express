@@ -1,0 +1,15 @@
+extends layout
+
+block content
+ h1.label.label-info material page
+ br 
+ br
+ br
+ ul
+  each item in mat_content
+   div.panel.panel-primary
+    div.panel.panel-heading
+      =item.title
+    div.panel.panel-body
+     !=item.body.replace(/\n/g, "<br />")
+   
