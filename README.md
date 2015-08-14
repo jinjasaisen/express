@@ -42,3 +42,24 @@ throw err;
     });
 
 ```
+
+- monk update()
+
+```javascript
+col.update( 
+{"title": rTitle},
+{$set:{
+"term":rTerm,
+"body":rBody
+}},
+function (err) {
+        if (err) {
+throw err;
+        }
+    });
+
+res.render("up_fin",{pagename:"update fin",
+title:rTitle
+});
+
+```
