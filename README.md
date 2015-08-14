@@ -23,3 +23,22 @@
        a(href=i.term)
         =i.term
 ```
+
+- monk findAndModify
+
+```javascript
+
+col.findAndModify({ 
+query :{"title" : rTitle},
+update :{$set:{
+"term":rTerm,
+"body":rBody
+}},
+"options": { "new": true, "upsert": true }
+    }, function (err) {
+        if (err) {
+throw err;
+        }
+    });
+
+```
