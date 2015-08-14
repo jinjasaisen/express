@@ -8,7 +8,7 @@
 
 - example of casting data into a hidden form
 
-\\\
+>
 
    ul
     - each i in list
@@ -20,4 +20,3 @@
       div.label.label-lg
        a(href=i.term)
         =i.term
-\\\
