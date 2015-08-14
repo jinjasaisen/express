@@ -12,16 +12,16 @@
 
 
 ```jade
-   ul
-    - each i in list
-     br
-     form(name="article",method="post",action="/art_post")
-      input(type="hidden", placeholder="title", name="title",value=i.title)
-      button(type="submit") 
-       =i.title
-      div.label.label-lg
-       a(href=i.term)
-        =i.term
+ ul
+  - each i in list
+  br
+  form(name="article",method="post",action="/art_post")
+   input(type="hidden", placeholder="title", name="title",value=i.title)
+   button(type="submit") 
+    =i.title
+   div.label.label-lg
+    a(href=i.term)
+     =i.term
 ```
 
 - monk findAndModify
