@@ -9,8 +9,8 @@
 - example of casting data into a hidden form
 
 
-
->   ul
+\\\jade
+   ul
     - each i in list
      br
      form(name="article",method="post",action="/art_post")
@@ -20,3 +20,4 @@
       div.label.label-lg
        a(href=i.term)
         =i.term
+\\\
