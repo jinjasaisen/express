@@ -2,9 +2,11 @@
 
 ### bl1 uses monk
 
+-  line breaks in the post body
+```jade
 - !=item.body.replace(/\n/g, "\<br />")
+```
 
-  is the code to line breaks.
 
 - example of casting data into a hidden form
 
