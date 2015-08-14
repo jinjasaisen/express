@@ -8,9 +8,9 @@
 
 - example of casting data into a hidden form
 
->
 
-   ul
+
+>   ul
     - each i in list
      br
      form(name="article",method="post",action="/art_post")
