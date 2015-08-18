@@ -2,4 +2,4 @@
 
 git add .
 git commit -m "add new"
-git push express
+git push express master
