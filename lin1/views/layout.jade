@@ -1,0 +1,31 @@
+doctype html
+html
+ head
+  title=title
+  link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', rel='stylesheet')
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width',initial-scale=1)
+  script(src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js")
+nav.navbar.navbar-default( role="navigation" )
+ .navbar-header
+  a.btn.btn-link( href="/") Home
+  a.btn.btn-link( href="/article" ) article
+  a.btn.btn-link( href="/mat_list" ) material
+  a.btn.btn-link( href="/part_list" ) particle
+  a.btn.btn-link( href="/prim_list" ) primitive       
+  a.btn.btn-lg(href="/add_post") add post
+  a.btn.btn-lg(href="/del_list") delete post  
+  a.btn.btn-lg(href="/up_list") update post  
+
+  block js
+body
+  div.container
+   div.jumbotron
+    block content
+ div.id.sidebar
+block foot
+  nav.navbar.navbar-default( role="navigation" )
+   a.btn.btn-lg(href="/article") article
+   a.btn.btn-link(href="/") home
+   a.btn.btn-lg(href="/tweet") tweet
+   a.btn.btn-lg(href="http://egames.mydns.jp") egames   
